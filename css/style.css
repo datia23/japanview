@@ -94,7 +94,7 @@ body {
 
     .jv-nav a {
         text-decoration: none;
-        font-size: 13px;
+        font-size: 12px;
         font-family: 'M PLUS 1', sans-serif;
     }
 
@@ -380,7 +380,7 @@ body {
         color: black;
         margin-left: 305px;
         font-family: 'Mochiy Pop One', sans-serif;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .video-profil {
@@ -467,7 +467,7 @@ body {
     .list-item-body .list-text a {
         text-decoration: none;
         font-family: 'Mochiy Pop One', sans-serif;
-        font-size: 14px;
+        font-size: 12px;
         color: black;
     }
 
@@ -550,7 +550,7 @@ body {
     .news-list-item .list-text {
         padding-left: 20px;
         font-family: 'Mochiy Pop One', sans-serif;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .btn-primary a.btn-news {
@@ -651,7 +651,7 @@ body {
         color: black;
         margin-left: 75px;
         font-family: 'Mochiy Pop One', sans-serif;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .wrapper-ttl-second h3 {
@@ -970,7 +970,7 @@ body {
     }
 
     .daily-rank .jv-list.list-feature .jv-list-item .list-item-body .list-text a {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .daily-rank .jv-list-item::after {
@@ -1030,7 +1030,7 @@ body {
 
     .popular-keyword a {
         color: #666;
-        font-size: 14px;
+        font-size: 10px;
         font-family: 'M PLUS 1', sans-serif;
         font-weight: 400;
         line-height: 30px;
