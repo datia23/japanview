@@ -60,6 +60,10 @@ body {
         font-family: 'Mochiy Pop One', sans-serif;
     }
 
+    .header-menu a:hover {
+        text-decoration: underline;
+    }
+
     .nav-wrapper {
         background-color: #fff;
         max-width: 1024px;
@@ -358,6 +362,10 @@ body {
         display: block;
     }
 
+    .text a:hover {
+        background-color: rgba(0, 0, 0, 0.363);
+    }
+
     .text-bottom .post-type {
         border: solid 1px #fff;
         border-radius: 8px;
@@ -437,6 +445,10 @@ body {
         font-family: 'Mochiy Pop One', sans-serif;
     }
 
+    .profil-pop-up:hover {
+        transform: scale(1.1);
+    }
+
     .profil-pop-up span {
         margin-left: 8px;
     }
@@ -465,6 +477,10 @@ body {
 
     .list-item-img img {
         max-width: 104%;
+    }
+
+    .list-item-img img:hover {
+        opacity: 0.9;
     }
 
     .list-item-body {
@@ -1206,21 +1222,34 @@ body {
     /* NEWSPAGE */
     .newspage-wrapper h3 {
         font-family: 'Mochiy Pop One', sans-serif;
+    }
+
+    .newspage-title a {
         font-size: 10px;
+        color: black;
+        text-decoration: none;
+        padding-bottom: 2px;
+    }
+
+    .newspage-title a:hover {
+        border-bottom: solid 5px #265fad;
     }
 
     .newspage-wrapper h3::after {
         content: '>';
         margin: 0 20px;
+        font-size: 10px;
     }
 
     .newspage-title {
         display: flex;
+        align-items: center;
     }
 
     .newspage-wrapper span {
         font-family: 'Mochiy Pop One', sans-serif;
         font-size: 10px;
+        margin-top: 5px;
     }
 
     /* content */
@@ -1313,5 +1342,72 @@ body {
         bottom: 0;
         left: 0;
         display: block;
+    }
+
+    .w760 {
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .article-box p {
+        font-family: 'M PLUS 1', sans-serif;
+        font-size: 12px;
+        line-height: 33px;
+        font-weight: 600;
+        margin-bottom: 2em;
+    }
+
+    .article-topic-body figure {
+        margin-bottom: 24px;
+    }
+
+    figure {
+        margin: auto;
+    }
+
+    .image-large img {
+        box-sizing: border-box;
+        height: auto;
+        max-width: 100%;
+        vertical-align: bottom;
+    }
+
+    .image-large figcaption {
+        font-size: 10px;
+        font-weight: 400;
+        font-family: 'M PLUS 1', sans-serif;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .share-article {
+        max-width: 100%;
+        width: 100%;
+        margin: 80px 0 100px;
+    }
+
+    .share-article ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .share-article li {
+        list-style: none;
+    }
+
+    .share-article a {
+        text-decoration: none;
+    }
+
+    .share-article img {
+        width: 150px;
+        height: 30px;
+    }
+
+    .share-article a:hover {
+        opacity: 0.8;
     }
 }
