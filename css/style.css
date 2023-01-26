@@ -84,7 +84,7 @@ body {
         position: relative;
     }
 
-    .jv-nav ul {
+    .jv-nav>ul {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -103,7 +103,7 @@ body {
     }
 
     .jv-nav a:hover {
-        text-decoration: underline;
+        color: black;
     }
 
     .nav-news a {
@@ -113,32 +113,140 @@ body {
         padding-left: 33px;
     }
 
-    .nav-featured a {
+    .nav-featured {
+        margin-right: 5px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .nav-featured>a {
         color: #71cd58;
         background: url('../img/icon-feature.png') left center no-repeat;
         background-size: contain;
         padding-left: 28px;
+        padding-right: 6px;
     }
 
-    .nav-learn a {
+    .nav-featured>a::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 8px;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 6px solid #cbcbcb;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        min-width: 13px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        left: 4px;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        color: #214fa9;
+    }
+
+    .nav-featured:hover .dropdown-content {
+        display: block;
+    }
+
+    .nav-learn>a {
         color: #f0b35f;
         background: url('../img/icon-learn-japanese.png') left center no-repeat;
         background-size: contain;
         padding-left: 30px;
     }
 
-    .nav-study a {
+    .nav-study {
+        margin-right: 5px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .nav-study>a {
         color: #00c2a1;
         background: url('../img/icon-school.png') left center no-repeat;
         background-size: contain;
         padding-left: 30px;
+        padding-right: 6px;
     }
 
-    .nav-exploc a {
+    .nav-study>a::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 8px;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 6px solid #cbcbcb;
+    }
+
+    .nav-study:hover .dropdown-content {
+        display: block;
+    }
+
+    .nav-exploc {
+        margin-right: 5px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .nav-exploc>a {
         background: url('../img/icon-map.png') left center no-repeat;
         background-size: contain;
         color: #fc575b;
         padding-left: 25px;
+        padding-right: 6px;
+    }
+
+    .nav-exploc>a::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 8px;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 6px solid #cbcbcb;
+    }
+
+    .dropdown-content .sub-menu-exploc>a {
+        color: #214fa9;
+    }
+
+    .nav-exploc:hover .dropdown-content {
+        display: block;
+    }
+
+    .nav-exploc .dropdown-content li:nth-child(2)>ul {
+        width: 17em;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .nav-exploc .dropdown-content li:nth-child(2) li {
+        width: 7em;
+        flex: none;
     }
 
     .nav-video a {
@@ -1280,7 +1388,8 @@ body {
         padding-left: 15px;
     }
 
-    .date-author-container .date-author li, .date-author-container .date-author li:nth-child(1) {
+    .date-author-container .date-author li,
+    .date-author-container .date-author li:nth-child(1) {
         font-size: 16px;
         padding: 0;
         margin: 0 2px 2px 0;
