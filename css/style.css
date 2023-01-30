@@ -564,6 +564,7 @@ body {
         font-family: 'Mochiy Pop One', sans-serif;
         font-size: 12px;
         color: black;
+        line-height: 2;
     }
 
     .btn-primary {
@@ -676,7 +677,7 @@ body {
     }
 
     .jv-list .list-articles {
-        display: flex;
+        display: block;
     }
 
     .list-articles .list-item-body {
@@ -684,7 +685,6 @@ body {
     }
 
     .list-articles .articles-list-item {
-        flex: 0 0 calc(50% - 16px);
         display: flex;
         border: none;
         margin: 10px 0 25px;
@@ -742,15 +742,12 @@ body {
     .ttl-exploc h2 {
         color: #fc575b;
         background: url('../img/icon-map.png') no-repeat left center;
-        background-size: contain;
+        background-size: auto;
         padding-left: 50px;
     }
 
-    .ttl-exploc h2 span {
-        color: black;
-        margin-left: 75px;
-        font-family: 'Mochiy Pop One', sans-serif;
-        font-size: 12px;
+    .ttl-exploc span {
+        display: none;
     }
 
     .wrapper-ttl-second h3 {
@@ -773,9 +770,7 @@ body {
         font-family: 'M PLUS 1', sans-serif;
     }
 
-    /* museum */
     .list-museum .museum-list-item {
-        flex: 0 0 calc(50% - 16px);
         display: flex;
         border: none;
         margin: 10px 0 25px;
@@ -846,7 +841,6 @@ body {
     }
 
     .cc-list-item {
-        flex: 0 0 calc(50% - 16px);
         display: flex;
         border: none;
         margin: 0 0 25px;
@@ -869,18 +863,18 @@ body {
     }
 
     .footer-wrapper {
-        flex-wrap: wrap;
+        display: block;
         max-width: 92%;
         margin: auto;
         padding: 40px 0;
         font-size: 12px;
-        display: flex;
-        justify-content: space-between;
     }
 
     .footer-logo {
-        flex: none;
-        padding-right: 15px;
+        display: flex;
+        text-align: center;
+        padding: 0 0 25px;
+        justify-content: space-around;
     }
 
     .footer-logo-1 img {
@@ -894,11 +888,11 @@ body {
         display: block;
         max-width: 120px;
         height: auto;
+        padding-top: 25px;
     }
 
     .footer-menu {
-        flex: 0 0 auto;
-        width: 85%;
+        width: 90%;
     }
 
     .footer-menu>ul {
@@ -907,13 +901,11 @@ body {
     }
 
     .footer-menu ul {
-        display: flex;
-        justify-content: flex-start;
+        display: block;
     }
 
     .footer-menu li ul {
         display: block;
-        width: 11em;
         padding: 10px 0 0;
     }
 
@@ -923,6 +915,7 @@ body {
 
     .footer-menu .nav-content>li {
         padding-left: 20px;
+        padding-bottom: 25px;
         font-family: 'M PLUS 1', sans-serif;
     }
 
@@ -934,7 +927,7 @@ body {
         border-bottom: solid 1px #c2ccd9;
         display: block;
         padding: 0 0 10px;
-        font-size: 11px;
+        font-size: 14px;
         text-decoration: none;
         color: black;
         font-weight: 300;
@@ -952,16 +945,17 @@ body {
     }
 
     .footer-menu li:nth-child(4) ul {
-        width: 14em;
+        width: 22em;
     }
 
     .footer-menu li:nth-child(4) li {
-        width: 7em;
+        width: 8em;
         flex: none;
     }
 
     .sub-menu a {
         text-decoration: none;
+        font-size: 14px;
     }
 
     /* copyright */
@@ -984,44 +978,15 @@ body {
     }
 
     /* side bar */
-    .side-bar {
-        width: 25%;
+    .sp.side-bar {
+        width: 88%;
+        margin: 50px auto 0;
     }
 
-    .side-bar h3 {
-        font-size: 12px;
+    .sp.side-bar h3 {
+        font-size: 17px;
         font-family: 'Mochiy Pop One', sans-serif;
         border-bottom: solid 2px #214fa9;
-    }
-
-    .sidebar .search-form {
-        position: relative;
-    }
-
-    .search-form h3 {
-        font-size: 12px;
-        border-bottom: none;
-        font-family: 'Mochiy Pop One', sans-serif;
-        margin-bottom: 8px;
-    }
-
-    .search-form input[type="text"] {
-        width: 78%;
-        border: solid 1px #ebebeb;
-        border-radius: 4px;
-        height: 35px;
-        padding: 0 20px;
-    }
-
-    .search-form input[type="submit"] {
-        width: 24px;
-        height: 24px;
-        border: 0;
-        background: url('../img/icon-search.png') center center no-repeat;
-        position: absolute;
-        margin-left: 180px;
-        margin-top: 6px;
-        cursor: pointer;
     }
 
     /* PR info */
@@ -1031,10 +996,11 @@ body {
         margin: 20px 0 10px;
     }
 
-    .pr-box .pr-banner img {
+    .sp.side-bar .pr-box .pr-banner img {
         display: block;
-        max-width: 255px;
-        width: 100%;
+        max-width: 375px;
+        width: 88%;
+        margin: auto;
     }
 
     /* daily rank */
@@ -1069,7 +1035,7 @@ body {
     }
 
     .daily-rank .jv-list.list-feature .jv-list-item .list-item-body .list-text a {
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .daily-rank .jv-list-item::after {
@@ -1496,7 +1462,7 @@ body {
     }
 
     .header {
-        max-width: 1024px;
+        max-width: 1440px;
     }
 
     .header-menu {
@@ -1751,6 +1717,7 @@ body {
 
     .text-bottom {
         padding: 0 15px 15px;
+        width: 100%;
     }
 
     .date p {
@@ -1770,160 +1737,35 @@ body {
     }
 
     /* Video */
+    .ttl-video h2 span {
+        margin-left: 325px;
+    }
+
     .profil-pop-up {
         padding: 10px 20px;
         font-size: 12px;
     }
 
     /* articles */
-
-    .list-articles .list-item-body {
-        line-height: 1.3;
-    }
-
     .list-articles .articles-list-item {
         flex: 0 0 calc(50% - 16px);
-        display: flex;
-        border: none;
-        margin: 10px 0 25px;
-    }
-
-    .list-articles .list-item-img img {
-        width: 150px;
-    }
-
-    .list-articles .list-text p a {
-        line-height: 1.2;
-        font-size: 12px;
-    }
-
-    .list-articles .list-text span {
-        font-size: 12px;
-        font-family: 'M PLUS 1', sans-serif;
-    }
-
-    .btn-primary a.btn-articles {
-        background: #71cd58;
-        margin-top: 10px;
     }
 
     /* learn */
-    .ttl-learn-jp {
-        background-image: url(../img/bg-ttl-learn.jpg);
-        background-repeat: no-repeat;
-        border-bottom: solid 2px #f0b35f;
-    }
-
-    .ttl-learn-jp h2 {
-        color: #f0b35f;
-        background: url('../img/icon-learn-japanese.png') no-repeat left center;
-        background-size: auto;
-        padding-left: 50px;
-    }
-
-    .btn-primary a.btn-learn-jp {
-        background-color: #f0b35f;
-        margin-top: 10px;
-    }
 
     /* experience */
-    .wrapper-exploc {
-        padding-top: 10px;
-    }
-
-    .ttl-exploc {
-        background-image: url('../img/bg-ttl-museum.jpg');
-        background-repeat: no-repeat;
-        border-bottom: solid 2px #fc575b;
-    }
-
-    .ttl-exploc h2 {
-        color: #fc575b;
-        background: url('../img/icon-map.png') no-repeat left center;
-        background-size: contain;
-        padding-left: 50px;
-    }
-
-    .ttl-exploc h2 span {
+    .ttl-exploc span {
+        display: unset;
         color: black;
-        margin-left: 75px;
+        margin-left: 150px;
         font-family: 'Mochiy Pop One', sans-serif;
-        font-size: 12px;
+        font-size: 11px;
     }
 
-    .wrapper-ttl-second h3 {
-        color: #fd7376;
-        font-size: 16px;
-        display: flex;
-        align-items: center;
-        margin: 5px 0 20px;
-        font-family: 'Mochiy Pop One', sans-serif;
-        letter-spacing: 1px;
-    }
-
-    .wrapper-ttl-second h3 hr {
-        margin: 0 20px;
-        border: solid #fd7376 0.5px;
-    }
-
-    .wrapper-ttl-second h3 span {
-        font-size: 16px;
-        font-family: 'M PLUS 1', sans-serif;
-    }
-
-    /* museum */
     .list-museum .museum-list-item {
         flex: 0 0 calc(50% - 16px);
-        display: flex;
-        border: none;
-        margin: 10px 0 25px;
     }
 
-    .museum-list-item .list-item-img img {
-        width: 150px;
-    }
-
-    .museum-list-item .list-item-body {
-        padding: 0;
-    }
-
-    .list-tags {
-        display: flex;
-        font-weight: 500;
-        flex-wrap: wrap;
-    }
-
-    .list-tags li {
-        list-style: none;
-        padding-right: 4px;
-    }
-
-    .museum-list-item .list-text a {
-        font-size: 12px;
-    }
-
-    .museum-list-item .list-text span {
-        font-size: 12px;
-    }
-
-    .list-tags li:first-child::before {
-        background: url('/img/icon-pin.png') no-repeat 0 0;
-        content: "";
-        width: 10px;
-        height: 15px;
-        margin-right: 4px;
-        display: inline-block;
-        vertical-align: middle;
-    }
-
-    .museum-list-item .list-tags li a {
-        font-size: 9px;
-        font-family: 'M PLUS 1', sans-serif;
-    }
-
-    .btn-primary a.btn-exploc {
-        background-color: #fc575b;
-    }
 
     /* community corner */
     .wrapper-cc {
@@ -1960,18 +1802,8 @@ body {
 
 
     /* footer */
-    .jv-footer {
-        margin-top: 50px;
-        background: url('/img/footer-bg.png') repeat;
-        color: #333;
-    }
-
     .footer-wrapper {
         flex-wrap: wrap;
-        max-width: 92%;
-        margin: auto;
-        padding: 40px 0;
-        font-size: 12px;
         display: flex;
         justify-content: space-between;
     }
@@ -1981,27 +1813,14 @@ body {
         padding-right: 15px;
     }
 
-    .footer-logo-1 img {
-        display: block;
-        max-width: 120px;
-        height: auto;
-        padding-bottom: 10px;
-    }
-
     .footer-logo-2 img {
-        display: block;
-        max-width: 120px;
-        height: auto;
+        padding-top: 0;
+        padding-left: 20px;
     }
 
     .footer-menu {
         flex: 0 0 auto;
-        width: 85%;
-    }
-
-    .footer-menu>ul {
-        flex-wrap: wrap;
-        width: 100%;
+        width: 98%;
     }
 
     .footer-menu ul {
@@ -2009,44 +1828,21 @@ body {
         justify-content: flex-start;
     }
 
-    .footer-menu li ul {
-        display: block;
-        width: 11em;
-        padding: 10px 0 0;
+    .footer-menu>ul {
+        gap: 30px;
     }
 
-    .footer-menu li {
-        list-style: none;
+    .footer-menu li ul {
+        width: 11em;
     }
+
 
     .footer-menu .nav-content>li {
-        padding-left: 20px;
-        font-family: 'M PLUS 1', sans-serif;
-    }
-
-    .footer-menu li li {
-        padding-top: 8px;
+        padding-bottom: 0;
     }
 
     .footer-menu .first-link>a {
-        border-bottom: solid 1px #c2ccd9;
-        display: block;
-        padding: 0 0 10px;
         font-size: 11px;
-        text-decoration: none;
-        color: black;
-        font-weight: 300;
-        font-family: 'Mochiy Pop One', sans-serif;
-    }
-
-    .nav-content .first-link a:hover {
-        text-decoration: underline;
-    }
-
-    .footer-menu li:nth-child(4) ul {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
     }
 
     .footer-menu li:nth-child(4) ul {
@@ -2055,11 +1851,10 @@ body {
 
     .footer-menu li:nth-child(4) li {
         width: 7em;
-        flex: none;
     }
 
     .sub-menu a {
-        text-decoration: none;
+        font-size: 11px;
     }
 
     /* copyright */
@@ -2136,113 +1931,6 @@ body {
     }
 
     /* daily rank */
-    .daily-rank h3 {
-        background: url('../img/icon-rank.png') left center no-repeat;
-        padding: 10px 0 10px 30px;
-        margin: 20px 0 10px;
-    }
-
-    .daily-rank .jv-list-item {
-        position: relative;
-    }
-
-    .jv-list.list-feature .jv-list-item {
-        display: flex;
-        border: none;
-        margin: 0 0 25px;
-    }
-
-    .daily-rank .jv-list.list-feature .jv-list-item .list-item-img {
-        width: 85px;
-        position: relative;
-    }
-
-    .daily-rank .jv-list.list-feature .jv-list-item .list-item-img img {
-        height: 85px;
-        border-radius: 5px;
-    }
-
-    .daily-rank .jv-list.list-feature .jv-list-item .list-item-body {
-        padding: 0;
-    }
-
-    .daily-rank .jv-list.list-feature .jv-list-item .list-item-body .list-text a {
-        font-size: 10px;
-    }
-
-    .daily-rank .jv-list-item::after {
-        position: absolute;
-        color: #fff;
-        border-radius: 50%;
-        width: 25px;
-        height: 25px;
-        left: -5px;
-        top: -5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Mochiy Pop One', sans-serif;
-        font-size: 10px;
-        font-weight: 500;
-    }
-
-    .daily-rank .jv-list-item:nth-child(1)::after {
-        content: '1';
-        background: #fc575b;
-    }
-
-    .daily-rank .jv-list-item:nth-child(2)::after {
-        content: '2';
-        background: #d2b946;
-    }
-
-    .daily-rank .jv-list-item:nth-child(3)::after {
-        content: '3';
-        background: #7accc8;
-    }
-
-    .daily-rank .jv-list-item:nth-child(4)::after {
-        content: '4';
-        background: #7b929f;
-    }
-
-    .daily-rank .jv-list-item:nth-child(5)::after {
-        content: '5';
-        background: #bbbbbb;
-    }
-
-    /* keyword */
-    .popular-keyword h3 {
-        background: url('../img/icon-rank.png') left center no-repeat;
-        padding: 10px 0 10px 30px;
-        margin: 20px 0 10px;
-    }
-
-    .popular-keyword div {
-        width: 85%;
-        border: solid 1px #ebebeb;
-        border-radius: 5px;
-        padding: 15px;
-    }
-
-    .popular-keyword a {
-        color: #666;
-        font-size: 10px;
-        font-family: 'M PLUS 1', sans-serif;
-        font-weight: 400;
-        line-height: 30px;
-        text-decoration: none;
-        word-wrap: break-word;
-    }
-
-    .popular-keyword a:hover {
-        text-decoration: underline;
-    }
-
-    .popular-keyword a::before {
-        content: '#';
-        color: #214fa9;
-    }
 
 
 
