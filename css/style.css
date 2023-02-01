@@ -59,9 +59,10 @@ body {
 
     ul.nav-icons {
         display: flex;
+        align-items: center;
         position: relative;
         top: 0;
-        right:66px;
+        right: 66px;
     }
 
     ul.nav-icons li {
@@ -78,6 +79,65 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    /* search */
+    .searchBox {
+        background: rgb(241, 241, 241);
+        height: 40px;
+        border-radius: 40px;
+        padding: 8px;
+    }
+    
+    .searchBox:hover > .searchInput {
+        width: 160px;
+        padding: 0 6px;
+    }
+    
+    .searchBox:hover > .searchButton {
+      background: white;
+      color : #2f3640;
+    }
+    
+    .searchButton {
+        color: white;
+        float: right;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s;
+    }
+    
+    .searchInput {
+        border:none;
+        background: none;
+        outline:none;
+        float:left;
+        padding: 0;
+        color: white;
+        font-size: 16px;
+        transition: 0.4s;
+        line-height: 40px;
+        width: 0px;
+    
+    }
+
+    .material-icons {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-smoothing: antialiased;
     }
 
     /* nav-sidebar sp */
@@ -133,7 +193,7 @@ body {
         color: #000000;
     }
 
-    #nav-sidebar ul.nav-content > li > a {
+    #nav-sidebar ul.nav-content>li>a {
         padding-bottom: 5px;
         display: block;
         border-bottom: solid #214fa9 2px;
@@ -153,8 +213,8 @@ body {
     }
 
     #nav-sidebar ul.dropdown-content a {
-      font-family: 'M PLUS 1', sans-serif;
-      font-size: 12px;
+        font-family: 'M PLUS 1', sans-serif;
+        font-size: 12px;
     }
 
     #nav-sidebar .sub-menu-exploc>a {
